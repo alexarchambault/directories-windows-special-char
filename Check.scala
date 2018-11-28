@@ -11,8 +11,8 @@ object Check {
 	val dirNameViaDirectories = userDirViaDirectories.getName
 	val dirNameViaLocalAppData = userDirViaLocalAppData.getName
 	
-	println(s"dirNameViaDirectories=$dirNameViaDirectories")
-	println(s"dirNameViaLocalAppData=$dirNameViaLocalAppData")
+	println(s"dirNameViaDirectories=$dirNameViaDirectories, isDirectory: ${userDirViaDirectories.isDirectory}")
+	println(s"dirNameViaLocalAppData=$dirNameViaLocalAppData, isDirectory: ${userDirViaLocalAppData.isDirectory}")
 	assert(dirNameViaDirectories == dirNameViaLocalAppData, s"$dirNameViaDirectories != $dirNameViaLocalAppData")
   }
 }
